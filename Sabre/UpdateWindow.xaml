@@ -1,0 +1,18 @@
+﻿<Controls:MetroWindow x:Name="updateWindow" x:Class="Sabre.UpdateWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sabre"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        mc:Ignorable="d"
+        GlowBrush="{DynamicResource AccentColorBrush}"
+        Title="Sabre - New version available!" Height="421.131" Width="678.787" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize" Initialized="updateWindow_Initialized">
+    <Grid>
+        <Button x:Name="updateButton" HorizontalAlignment="Left" Margin="497,330,0,0" VerticalAlignment="Top" Width="167" Height="54" Content="Update" FontSize="20" Click="updateButton_Click"/>
+        <TextBlock x:Name="updateText" HorizontalAlignment="Left" Margin="10,345,0,0" TextWrapping="Wrap" Text="To download the latest update, click on the button." VerticalAlignment="Top"/>
+        <ListBox x:Name="patchNotesList" HorizontalAlignment="Left" Height="315" Margin="10,10,0,0" VerticalAlignment="Top" Width="654" BorderBrush="#FFA4A4A4" Background="{x:Null}" ScrollViewer.CanContentScroll="False"/>
+        <Button x:Name="closeButton" Content="No, thanks" Margin="312,330,195,8" Click="closeButton_Click" FontSize="20"/>
+
+    </Grid>
+</Controls:MetroWindow>
